@@ -2,8 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
+.App-logo {                       /*imagen grande*/
   height: 40vmin;
+  pointer-events: none;
+}
+.App-logoNav {
+  
+  vertical-align:bottom;          /*imagen de barra navegacion*/
+  float: left;
+  width: 70px;
+  height: 07vmin;
+  margin: 0%;
   pointer-events: none;
 }
 
@@ -13,17 +22,18 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header {                                /*el header*/
+  background:#1f45db ;
+  background-color: #071e58;
+  min-height: 10vh;
   display: flex;
+  border-radius: 0px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +46,78 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+    background:#f5f0f0 ;
+   
+}
+
+
+
+ /*la barra de nav*/
+
+*{                          
+  text-align:center;
+  margin: 1;
+  border-radius: 50px;
+  padding: 0;
+  box-sizing: border-box ;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.navegacion{
+  width: 1000px;
+  margin: 0px auto;
+  font-size:x-large;
+  background:rgba(66, 58, 60, 0.87);
+}
+
+.navegacion ul{
+  list-style: none;
+  text-align:right;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a{
+  display:block;
+  padding: 15px 40px;
+  color: #ffffff;
+  font-family: 'open sans';
+  text-decoration: none;
+}
+
+.menu li a:hover{
+    color: darkgoldenrod;
+    transition: all.3s;
+} 
+
+/*submenu*/
+.submenu {
+  position:absolute;
+  width: 90%;
+  background:rgba(66, 58, 60, 0.87);
+  visibility: hidden;
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.submenu >li >a {
+  display: block;
+  font-size: large;
+  padding: 05px;
+  color: #ffffff;
+  font-family: 'open sans';
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+opacity: 1;
+ }
