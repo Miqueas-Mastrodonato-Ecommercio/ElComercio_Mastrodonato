@@ -1,11 +1,12 @@
 import '../../App.css';
-import logo from '../../logo.svg';
+import CartWidget from '../CartWidget/CartWidget';
+
 const NavBar = () => {
     return (
       <div>
         <nav class="navegacion"  > 
           <ul class="menu" >
-          <img src={logo} className="App-logoNav" alt="logo" />
+          <CartWidget/>
             <li><a href="#">inicio</a></li>
             <li><a href="#">nosotros</a></li>
             <li><a href="#">servicios</a>
