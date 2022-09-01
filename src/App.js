@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar.js';
 import ItemListContainer from './components/ItemListContainer/ItemListConteiner';
-import Cuadrado from './components/Text/Cuadrado';
 import ItemCounter from './components/ItemCounter/ItemCounter.js';
 
 
