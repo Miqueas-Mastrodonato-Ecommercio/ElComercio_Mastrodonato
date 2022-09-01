@@ -12,7 +12,7 @@
   float:left;
   margin-left: 02%;
   width: 06%;
-  height: 08vmin; 
+  height: 06vmin; 
   pointer-events: none;           /* margin: 0%; */
   
   
@@ -126,7 +126,7 @@ opacity: 1;
  }
 
 .Contenedor {
-  margin-right: 27%;
+  margin-right: 19%;
   color: #FFC745;
 }
 
@@ -175,7 +175,48 @@ color: #FFC745;
   border: 1px duble  #8d9294  ;
   margin-left: 10px;
   margin-top: 1px;
-}
+  }
+
+
+  .CuadradoBoleto{ 
+    height: auto;
+    width: 350px;
+    color: FF813E;
+    background:#700629;
+    color: #000000;
+    border-radius: 6px;
+    color: #FFC745;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 670px;
+  }
+
+
+  #mas {
+    height:100px;
+    width: 100px; 
+    font-size: 50px;
+    margin: 10px;
+    color: #FFC745; 
+    background:#940d3a;
+  
+  }
+
+  #menos {
+    height:100px;
+    width: 100px; 
+    font-size: 50px;
+    margin: 10px;
+    color: #FFC745; 
+    background:#940d3a;
+  
+  }
+
+  .img-boleto {
+    height:300px;
+    width: 300px; 
+  
+  }
  /*
 #cuadrado2{
   

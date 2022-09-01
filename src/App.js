@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar.js';
 import ItemListContainer from './components/ItemListContainer/ItemListConteiner';
 import Cuadrado from './components/Text/Cuadrado';
+import ItemCounter from './components/ItemCounter/ItemCounter.js';
+
 
 function App() {
   return (
@@ -25,8 +27,14 @@ function App() {
       </header>
       <body>
       <div class="CuadradoCentral">
-        <img src={logo} className="App-logo" alt="logo" />
+
+        <div class="CuadradoBoleto">
+        <ItemCounter/>
+        </div>
+
         
+        <img src={logo} className="App-logo" alt="logo" />
+        <ItemListContainer/>
         <h1>holi</h1>
 
         <p>
