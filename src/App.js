@@ -17,10 +17,7 @@ function App() {
           rel="noopener noreferrer"  */
         >
         <NavBar></NavBar>
-        <ItemListContainer> 
-        <div>Bienvenido a la pagina</div>
-        </ItemListContainer>
-
+        
 
         </a>
       </header>
@@ -29,18 +26,9 @@ function App() {
 
         <div class="CuadradoBoleto">
         <ItemCounter/>
+        
         </div>
-
-        
-        <img src={logo} className="App-logo" alt="logo" />
         <ItemListContainer/>
-        <h1>holi</h1>
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        Learn React
-        
         </div>
       
       

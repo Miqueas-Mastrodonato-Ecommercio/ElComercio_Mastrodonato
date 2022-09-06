@@ -27,7 +27,7 @@
 .App-header {                                /*el header*/
   background:#1f45db ;
   background-color: #c74b4b;
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   border-radius: 0px;
   flex-direction: column;
@@ -169,7 +169,7 @@ color: #FFC745;
 
 .CuadradoCentral {
   float: left;
-  height:800px;
+  height:auto;
   width: 79%;
   background:#ffffff;
   border: 1px duble  #8d9294  ;
@@ -188,7 +188,7 @@ color: #FFC745;
     color: #FFC745;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 670px;
+    margin-left: 540px;
   }
 
 
@@ -216,6 +216,29 @@ color: #FFC745;
     height:300px;
     width: 300px; 
   
+  }
+
+  #items {
+    height: auto;
+    width: 350px;
+    color: FF813E;
+    background:#ca9e9e;
+    color: #000000;
+    border-radius: 2px #030303;
+    margin-top: 100px;
+    margin-left: 60px ;
+    margin-right: 60px;
+    float: left;
+    display:inline;
+  }
+
+  #items p {
+    font-size: 30px;
+    color: #160c0c;
+  }
+  #items h1 {
+    font-size: 30px;
+    color: #160c0c;
   }
  /*
 #cuadrado2{
