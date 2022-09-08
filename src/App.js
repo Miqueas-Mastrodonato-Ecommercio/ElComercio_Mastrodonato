@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar.js';
 import ItemListContainer from './components/ItemListContainer/ItemListConteiner';
 import ItemCounter from './components/ItemCounter/ItemCounter.js';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
 
 
 function App() {
@@ -23,13 +25,15 @@ function App() {
       </header>
       <body>
       <div class="CuadradoCentral">
+          
+            <div class="CuadradoBoleto">
+              <ItemCounter/>
+            </div>
 
-        <div class="CuadradoBoleto">
-        <ItemCounter/>
-        
-        </div>
-        <ItemListContainer/>
-        </div>
+            <div> <ItemListContainer/> </div>     
+            <div> <ItemDetailContainer/></div>
+             
+      </div>
       
       
       <div class="Cuadrado">
@@ -43,7 +47,7 @@ function App() {
                                 y Carmela intenta sobrevivir bajo las sombras de la iglesia.
                                 En días de calor dónde ni el aire corre por esa capilla
                                 deberán saber quiénes son sus aliados y quiénes no.</p> 
-        </div>
+      </div>
         
        </body>
       

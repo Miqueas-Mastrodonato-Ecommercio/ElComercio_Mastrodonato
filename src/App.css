@@ -172,7 +172,7 @@ color: #FFC745;
   height:auto;
   width: 79%;
   background:#ffffff;
-  border: 1px duble  #8d9294  ;
+  border: 1px double  #8d9294  ;
   margin-left: 10px;
   margin-top: 1px;
   }
@@ -224,12 +224,13 @@ color: #FFC745;
     color: FF813E;
     background:#ca9e9e;
     color: #000000;
-    border-radius: 2px #030303;
+    border-radius: 10px ;
     margin-top: 100px;
     margin-left: 60px ;
     margin-right: 60px;
     float: left;
     display:inline;
+    border: 3px double  #8d9294  ;
   }
 
   #items p {
@@ -237,7 +238,28 @@ color: #FFC745;
     color: #160c0c;
   }
   #items h1 {
+    font-size: 40px;
+    color: #160c0c;
+  }
+
+  #detalles {
+   width: 350px;
+   margin-top: 600px;
+   margin-left: 530px ;
+   background-color:#ca9e9e;
+   border-radius: 10px;
+   border: 3px double  #8d9294  ;
+  }
+
+  #detalles p {
+
+    text-align:left;
+    margin-left: 10px;
     font-size: 30px;
+    color: #160c0c;
+  }
+  #detalles h1 {
+    font-size: 40px;
     color: #160c0c;
   }
  /*
