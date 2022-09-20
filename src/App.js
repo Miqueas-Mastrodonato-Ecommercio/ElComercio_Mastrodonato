@@ -1,57 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar.js';
-import ItemListContainer from './components/ItemListContainer/ItemListConteiner';
-import ItemCounter from './components/ItemCounter/ItemCounter.js';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import NavBar from './components/Desafios/NavBar/NavBar.js';
+import ItemListContainer from './components/Desafios/ItemListContainer/ItemListConteiner';
+import ItemCounter from './components/Desafios/ItemCounter/ItemCounter.js';
+import ItemDetailContainer from './components/Desafios/ItemDetailContainer/ItemDetailContainer';
+import {BrowserRouter, Routes, Route, useSearchParams} from 'react-router-dom'; 
+import Contactpage from './pages/ContactPage';
+import MainPage from './pages/MainPage';
+import UsPage from './pages/UsPage';
+import Rutas from './Routers/Route';
+import {ThemeContext} from './Context/ThemeContext'
+import { useState } from 'react';
 
 
 
 function App() {
-  return (
-    <div className="App">
-      
-      <header className="App-header">
-        <a
-          /* className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"  */
-        >
-        <NavBar></NavBar>
-        
+const [texto,setTexto] = useState("")
 
-        </a>
+
+    return (
+<ThemeContext.Provider value= {{texto:texto, setTexto}}>
+  <BrowserRouter>
+    <div className="App"> 
+      <header className="App-header">
+          <a>
+          <NavBar></NavBar>
+          </a>
       </header>
       <body>
-      <div class="CuadradoCentral">
+        <Rutas></Rutas>
           
-            <div class="CuadradoBoleto">
-              <ItemCounter/>
-            </div>
-
-            <div> <ItemListContainer/> </div>     
-            <div> <ItemDetailContainer/></div>
-             
-      </div>
-      
-      
-      <div class="Cuadrado">
-                <h1>Querido San Antonio</h1> 
-                                <p>En una iglesia ubicada en el interior de Argentina, 
-                                tres mujeres se encuentran entre chismes y rezos. Bajo
-                                la mirada de San Antonio de Padua pedirán por hombres 
-                                que lleguen a sus vidas. Pina anhela el regreso de su
-                                marido, Eliseo, que se fue a la guerra; Filumena 
-                                continúa creyendo en el hombre soñado y el amor verdadero;
-                                y Carmela intenta sobrevivir bajo las sombras de la iglesia.
-                                En días de calor dónde ni el aire corre por esa capilla
-                                deberán saber quiénes son sus aliados y quiénes no.</p> 
-      </div>
-        
-       </body>
-      
+          <div class="CuadradoCentral">
+          </div>
+      </body>     
     </div>
+  </BrowserRouter>
+</ThemeContext.Provider>
   );
 }
 

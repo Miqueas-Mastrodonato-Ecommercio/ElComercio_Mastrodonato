@@ -1,6 +1,6 @@
-import Item from "../Item/Item";
+import Item from "./Item";
 
-const ItemList = ({itemsInList}) => {
+const ItemList2 = ({itemsInList}) => {
 
   return (
     <>  
@@ -9,11 +9,11 @@ const ItemList = ({itemsInList}) => {
                 
                 <Item
                 key={producto.id}
+                item={producto}
                 name={producto.name}
                 description={producto.description}
                 price={producto.price} 
                 image={producto.image}
-
                 />
                 )
         })}
@@ -21,4 +21,4 @@ const ItemList = ({itemsInList}) => {
   );
 };
 
-export default ItemList;
+export default ItemList2;

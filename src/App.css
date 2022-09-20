@@ -80,24 +80,40 @@ body{
 
 }
 
+
 .menu > li{
   position: relative;
   display: inline-block;
 }
 
+/*.claseinactive{
+  color: #1d1010;
+}                             indicador de donde se ubica el usuario
+                              se debe borrar color de menu > li >a
+.active{
+  color: #e7e7e7;
+}*/
+
 .menu > li > a{
   display:block;
   padding: 15px 50px;
-  color: #ffffff;
-  font-family: 'open sans';
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .menu li a:hover{
     color: darkgoldenrod;
     transition: all.3s;
 } 
+
+.menu li a:current{
+  color: white;
+} 
+
 
 /*submenu*/
 .submenu {
@@ -115,7 +131,8 @@ body{
   text-align: center;
   font-size: 30px;
   padding: 05px;
-  color: #ffffff;
+  color: #000000;
+  background-color: #940d3a;
   font-family: 'open sans';
   text-decoration: none;
 }
@@ -124,6 +141,8 @@ body{
 visibility: visible;
 opacity: 1;
  }
+
+ 
 
 .Contenedor {
   margin-right: 16%;
@@ -222,7 +241,7 @@ color: #FFC745;
     height: auto;
     width: 350px;
     color: FF813E;
-    background:#ca9e9e;
+    background-color:#ca8080;
     color: #000000;
     border-radius: 10px ;
     margin-top: 100px;
@@ -234,6 +253,8 @@ color: #FFC745;
   }
 
   #items p {
+    text-align:left;
+    margin-left: 10px;
     font-size: 30px;
     color: #160c0c;
   }
@@ -246,7 +267,8 @@ color: #FFC745;
    width: 350px;
    margin-top: 600px;
    margin-left: 530px ;
-   background-color:#ca9e9e;
+   margin-bottom: 50px ;
+   background-color:#ca8080;
    border-radius: 10px;
    border: 3px double  #8d9294  ;
   }

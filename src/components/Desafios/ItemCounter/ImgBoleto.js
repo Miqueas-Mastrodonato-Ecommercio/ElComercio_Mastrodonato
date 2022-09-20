@@ -1,4 +1,4 @@
-import logo from '../../components/Images/entrada.png';
+import logo from '../../Elements/Images/entrada.png';
 
 const ImgBoleto = ({props} ) => {
     return(
