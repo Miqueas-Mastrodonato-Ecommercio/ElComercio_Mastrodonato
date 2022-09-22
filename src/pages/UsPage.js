@@ -1,9 +1,9 @@
 import React, {useContext} from "react"
-import {ThemeContext} from "../Context/ThemeContext"
+import {CartContext} from "../Context/CartContext"
 
 const UsPage = () => {
   //console.log(useContext(ThemeContext))
-  const valorContext = useContext (ThemeContext);
+  const valorContext = useContext (CartContext);
   console.log('valorContext', valorContext)
 
   return (
@@ -13,10 +13,6 @@ const UsPage = () => {
 <div class="CuadradoCentral">
     <h1>vamos a contarles</h1>
     <h2>Sobre nosotros</h2>
-    <h2>{valorContext.texto}</h2>
-    <input onChange={(event)=>valorContext.setTexto(event.target.value)} placeholder= "type something"/>
-
-    
 </div>
 </body>
   

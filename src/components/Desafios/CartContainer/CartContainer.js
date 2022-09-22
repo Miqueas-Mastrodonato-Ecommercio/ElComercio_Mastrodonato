@@ -1,15 +1,19 @@
 import React, {useContext} from "react"
-import {ThemeContext} from "../../../Context/ThemeContext"
+import { CartContext } from "../../../Context/CartContext";
 
 const CartContainer = () => {
-    const valorContext = useContext (ThemeContext);
+    const valor = useContext (CartContext)
   return (
-    <div>
-      CartContainer
-      <p>{valorContext.texto}</p>
-      <button onClick={()=>valorContext.setTexto("nuevo texto")}>enviar texto</button>
-    </div>
+   
+      <>
+        {valor.ListaCarrito.map(item=>(
+          <p>{item}</p>
+        ))}
+      </>
+      
+     
+ 
   )
 }
 
-export default CartContainer
+export default CartContainer;

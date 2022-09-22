@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Contactpage from '../pages/ContactPage';
 import MainPage from '../pages/MainPage';
 import UsPage from '../pages/UsPage';
@@ -19,8 +19,6 @@ const Rutas = () => {
             <Route path="/servicios" element = {<ItemListContainer/>}/>
             <Route path="/productos/:categoryId" element = {<ItemListContainer/>}/>
             <Route path="/item/:productId" element = {<ItemDetailContainer/>}/>
-
-
             <Route path="/cart" element = {<CartContainer/>}/>
           </Routes>
         

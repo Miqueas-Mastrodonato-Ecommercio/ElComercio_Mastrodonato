@@ -2,14 +2,16 @@ import { useState } from "react"
 import ImgBoleto from "./ImgBoleto";
 
 const ItemCounter = () => {
-    const [listaItem, setListaItem] = useState(0);
-    const aumento = () => {
+    const [stock, listaItem, setListaItem] = useState(0);
+    const aumento = () => {                                               //lisItem=count
+        if(listaItem<stock){
         setListaItem (listaItem + 1)
-    }
+    }}
 
     const resta = () => {
+        if(listaItem>1){
         setListaItem(listaItem - 1)
-    }
+      }}
 
   return (
     <>
@@ -19,6 +21,8 @@ const ItemCounter = () => {
       <h2>{listaItem}</h2>
       <button id='mas' onClick={aumento}>+</button>
       <button id='menos' onClick={resta}>-</button>
+      <button disabled={stock === 0} className='botoncarrito' onClick={()=>agregarItem(listaItem)}>
+      Agregar al carro </button>
     </>
   )
 }
